@@ -25,7 +25,25 @@ class ProbNewGO {
         System.out.println(strValue2);
         
         System.out.println();
-       
+        
+        Integer[] intArray = { 5,8,2,1,5,6 };
+        String[] doubleArray = {"sdf","sdfs","a","qtyui"};
+        
+        System.out.println("Int arrays");
+        VivodMassiva(intArray);
+
+        System.out.println("\nString array");
+        VivodMassiva(doubleArray);
     } 
+    
+    public static <K> void VivodMassiva( K[] mas ) {
+    	
+    	Arrays.sort(mas);
+    	
+        for(K element : mas) {
+           System.out.printf("%s ", element);
+        }
+        System.out.println();
+     }
     
 } 
